@@ -1,0 +1,6 @@
+project: linkify
+target: linkify-fuzz
+
+cmds:
+    - cmd: ./linkify-fuzz
+      libfuzzer: true
