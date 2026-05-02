@@ -13,7 +13,7 @@ jobs:
           - stable
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Install toolchain
         uses: actions-rs/toolchain@v1
@@ -41,7 +41,7 @@ jobs:
             msrv: true
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Install toolchain
         uses: actions-rs/toolchain@v1
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Install toolchain
         uses: actions-rs/toolchain@v1
@@ -91,7 +91,7 @@ jobs:
       options: --security-opt seccomp=unconfined
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Generate code coverage
         uses: actions-rs/cargo@v1
@@ -112,7 +112,7 @@ jobs:
         working-directory: demo
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Install toolchain
         uses: actions-rs/toolchain@v1
